@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<header>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo"></div>
+            <h2>Stopwatch</h2>
+        </div>
+        <div class="nav-right">
+            <div class="icon">
+                <i class="ri-timer-line"></i>
+                <i class="ri-menu-3-fill"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="stopwatch">
+        <h1 id="displayTime">00:00:00</h1>
+        <div class="buttons">
+            <img src="stop.png" onclick="watchStop()">
+            <img src="start.png" onclick="watchStart()">
+            <img src="reset.png" onclick="watchReset()">
+        </div>
+    </div>
+
+</body>
+    <script src="stopwatch.js"></script>
+</html>
